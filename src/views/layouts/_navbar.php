@@ -6,12 +6,6 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 
 $menuItems = [];
-$menuItems[] = [
-    'label' => '<i class="fa fa-github-alt"></i> GitHub',
-    'url' => 'https://github.com/phundament/nano',
-    'visible' => true
-];
-
 
 if (\Yii::$app->hasModule('user')) {
     if (\Yii::$app->user->isGuest) {

@@ -1,8 +1,6 @@
 <div class="main-default-index">
     <div class="container">
 
-        <h1>That's me</h1>
-
         <?php \yii2masonry\yii2masonry::begin(
             [
                 'clientOptions' => [
