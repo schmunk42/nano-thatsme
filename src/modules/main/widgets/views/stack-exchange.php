@@ -15,5 +15,6 @@ use yii\helpers\ArrayHelper;
 
 <div class="masonry-widget widget-stack-overflow">
     <h2>Stack Overflow</h2>
-    <?= ArrayHelper::getValue($data, 'reputation') ?>
+    <?= ArrayHelper::getValue($data, 'display_name') ?><br/>
+    <span class="badge"><?= ArrayHelper::getValue($data, 'reputation') ?></span> reputation
 </div>

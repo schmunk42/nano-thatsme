@@ -16,5 +16,6 @@ use yii\helpers\ArrayHelper;
 
 <div class="masonry-widget widget-git-hub">
     <h2>GitHub</h2>
-    <?= ArrayHelper::getValue($data, 'followers') ?>
+    <?= ArrayHelper::getValue($data, 'login') ?><br/>
+    <span class="badge"><?= ArrayHelper::getValue($data, 'followers') ?></span> followers
 </div>

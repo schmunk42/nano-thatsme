@@ -8,7 +8,14 @@
  * file that was distributed with this source code.
  */
 
-#Yii::$container->set('\yii\helpers\VarDumper', );
+Yii::$container->set(
+    'github',
+    function () {
+        return new \Github\Client(
+            new \Github\HttpClient\CachedHttpClient(array('cache_dir' => '/app/runtime/github-api-cache'))
+        );
+    }
+);
 
 return [
     /*'components' => [
