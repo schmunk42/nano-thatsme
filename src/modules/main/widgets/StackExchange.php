@@ -14,6 +14,7 @@ use app\modules\main\helpers\Settings;
 use BenatEspina\StackExchangeApiClient\Client;
 use BenatEspina\StackExchangeApiClient\Method\UserAPI;
 use yii\base\Widget;
+use yii\helpers\Html;
 use yii\helpers\VarDumper;
 
 class StackExchange extends Widget
@@ -47,7 +48,8 @@ class StackExchange extends Widget
                 return $data;
             }
         } else {
-            \Yii::$app->session->addFlash('warning', 'StackOverflow userId not set.');
+            $settingsLink = Html::a('settings module', ['/settings']);
+            \Yii::$app->session->addFlash("warning", "StackOverflow <code>userId</code> not set, go to {$settingsLink}.");
         }
     }
 

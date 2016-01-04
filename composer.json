@@ -29,6 +29,12 @@
     "source": "https://github.com/phundament/app"
   },
   "minimum-stability": "stable",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/schmunk42/StackExchangeApiClient.git"
+    }
+  ],
   "require": {
     "dmstr/yii2-cms-metapackage": "~2.0",
     "vlucas/phpdotenv": "2.*",

@@ -13,6 +13,7 @@ use app\modules\main\helpers\Settings;
 use Github\Client;
 use Github\Exception\RuntimeException;
 use yii\base\Widget;
+use yii\helpers\Html;
 use yii\helpers\VarDumper;
 
 class GitHub extends Widget
@@ -38,7 +39,8 @@ class GitHub extends Widget
                 \Yii::$app->session->addFlash('error', 'GitHub API error: '.$e->getMessage());
             }
         } else {
-            \Yii::$app->session->addFlash('warning', 'GitHub userName not set.');
+            $settingsLink = Html::a('settings module', ['/settings']);
+            \Yii::$app->session->addFlash('warning', "GitHub <code>userName</code> not set, go to {$settingsLink}.");
         }
     }
 }
