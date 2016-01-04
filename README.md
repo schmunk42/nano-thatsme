@@ -1,11 +1,9 @@
-nano
-====
+That's me
+=========
 
-Nano is a minimalistic application template using [Phundament](https://github.com/phundament/app), [Yii 2.0 Framework](http://www.yiiframework.com/doc-2.0/guide-index.html), 
-[PHP](http://php.net) and [Docker](https://www.docker.com).
+A little application displaying API data from GitHub, StackOverflow, ... Built with [Phundament nano](https://github.com/phundament/nano).
 
-Based upon the Docker `phundament/app` image it includes a ready-to-use application, which you can customize to fit your
-needs.
+![screen-thats-me](https://cloud.githubusercontent.com/assets/649031/12098515/1e4ac7ee-b323-11e5-8ee1-bfb0d26817a2.png)
 
 ## Requirements
 
