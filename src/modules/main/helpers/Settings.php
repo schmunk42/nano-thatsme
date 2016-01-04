@@ -11,7 +11,8 @@ namespace app\modules\main\helpers;
  */
 class Settings
 {
-    static function get($key, $section, $default = null, $create = true) {
+    static function get($key, $section, $default = null, $create = true)
+    {
         $value = \Yii::$app->settings->get($key, $section, $default);
         if ($value === $default && $create !== false) {
             \Yii::$app->settings->set($key, $default, $section);
