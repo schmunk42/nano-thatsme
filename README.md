@@ -90,6 +90,10 @@ Tag it
 And push it to a registry    
     
     docker push registry/vendor/image
+
+Alternative build-script
+    
+    COMPOSE_PROJECT_NAME=nanousrbinde IMAGE_NAME=schmunk42/thatsme sh build/scripts/deploy.sh
     
 ---
 
