@@ -15,6 +15,7 @@ A little application displaying API data from GitHub, StackOverflow, ... Built w
 [Download](https://github.com/phundament/nano/releases) the latest release and start by setting up the `vendor` folder 
 for local development and code-completion
 
+    cp .env-dist .env
     docker-compose run php composer install
 
 Start stack
