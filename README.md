@@ -12,6 +12,14 @@ A little application displaying API data from GitHub, StackOverflow, ... Built w
 - [docker](https://docs.docker.com/engine/installation/)
 - [docker-compose](https://docs.docker.com/compose/) **>=1.5.2**
 
+## TL;dr
+
+Instant test-drive with `docker-compose`
+
+    mkdir thatsme && cd thatsme
+    curl -o docker-compose.yml https://raw.githubusercontent.com/schmunk42/nano-thatsme/master/docker-compose.yml
+    docker-compose up
+
 ## Installation
 
 [Download](https://github.com/phundament/nano/releases) the latest release and start by setting up the `vendor` folder 
