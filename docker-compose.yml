@@ -3,6 +3,8 @@
 php:
   image: schmunk42/thatsme
   command: sh src/run.sh
+  environment:
+    - DB_ENV_MYSQL_ROOT_USER=root
   links:
     - 'percona:DB'
   volumes:
@@ -13,7 +15,7 @@ nginx:
   links:
     - 'php:PHPFPM'
   ports:
-    - 8023
+    - 80
   volumes_from:
     - php
 
